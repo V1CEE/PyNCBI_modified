@@ -103,6 +103,7 @@ def parse_idat_files(path,array_type):
         generate_sample_sheet(path)
     # read sample sheet
     sample_sheet = pd.read_csv(path+'sample_sheet.csv')
+    sample_sheet['Sentrix_Position'] = sample_sheet['Sentrix_Position'].astype(str)
 
     # map GSM to id and position if there are sample names in sample sheet
     sample_name_map = dict()
