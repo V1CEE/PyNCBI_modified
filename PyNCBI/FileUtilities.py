@@ -112,8 +112,8 @@ def parse_idat_files(path,array_type):
             if row['Sample_Name'] != None:
                 sample_name_map[str(row['Sentrix_ID'])+'_' + str(row['Sentrix_Position'])] = row['Sample_Name']
             else:
-                sample_name_map[str(row['Sentrix_ID'])+'_'+row['Sentrix_Position']] =\
-                    str(row['Sentrix_ID'])+'_'+row['Sentrix_Position']
+                sample_name_map[str(row['Sentrix_ID'])+'_'+str(row['Sentrix_Position'])] =\
+                    str(row['Sentrix_ID'])+'_'+str(row['Sentrix_Position'])
 
     # validate file names
     # rename files if needed
