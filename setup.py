@@ -7,8 +7,8 @@ except ImportError:
     read_md = lambda f: open(f, 'r').read()
 
 setup(
-  name = 'PyNCBI',
-  packages = ['PyNCBI'],
+  name = 'PyNCBI_modified',
+  packages = ['PyNCBI_modified'],
   version = '0.1.6.1',
   license='MIT',
   description = 'Simple API for Python Integration with NCBI',
